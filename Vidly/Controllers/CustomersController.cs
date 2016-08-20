@@ -21,7 +21,6 @@ namespace Vidly.Controllers
         {
             ViewBag.Title = "Customer Page";
 
-            customers = null;
             return View(customers);
         }
 
