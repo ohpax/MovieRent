@@ -223,10 +223,59 @@
     <Compile Include="Migrations\201608210105143_AddAnotationsToCustomerName.Designer.cs">
       <DependentUpon>201608210105143_AddAnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608220135034_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\201608220135034_AddNameToMembershipType.Designer.cs">
+      <DependentUpon>201608220135034_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220136299_PopulateNamesToMembershipType.cs" />
+    <Compile Include="Migrations\201608220136299_PopulateNamesToMembershipType.Designer.cs">
+      <DependentUpon>201608220136299_PopulateNamesToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220207282_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201608220207282_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201608220207282_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220210347_ModifyBirthdateInCustomerAndMakeItNullable.cs" />
+    <Compile Include="Migrations\201608220210347_ModifyBirthdateInCustomerAndMakeItNullable.Designer.cs">
+      <DependentUpon>201608220210347_ModifyBirthdateInCustomerAndMakeItNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220225510_DeleteBirthdateFromCustomer.cs" />
+    <Compile Include="Migrations\201608220225510_DeleteBirthdateFromCustomer.Designer.cs">
+      <DependentUpon>201608220225510_DeleteBirthdateFromCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220227019_AddBirthdateToCustomer2.cs" />
+    <Compile Include="Migrations\201608220227019_AddBirthdateToCustomer2.Designer.cs">
+      <DependentUpon>201608220227019_AddBirthdateToCustomer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220321247_CreateGenreTableAndAddItToMovie.cs" />
+    <Compile Include="Migrations\201608220321247_CreateGenreTableAndAddItToMovie.Designer.cs">
+      <DependentUpon>201608220321247_CreateGenreTableAndAddItToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220322175_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201608220322175_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201608220322175_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220346593_AddReleaseDateToMovie.cs" />
+    <Compile Include="Migrations\201608220346593_AddReleaseDateToMovie.Designer.cs">
+      <DependentUpon>201608220346593_AddReleaseDateToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220348168_AddDateAddedToMovie.cs" />
+    <Compile Include="Migrations\201608220348168_AddDateAddedToMovie.Designer.cs">
+      <DependentUpon>201608220348168_AddDateAddedToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220349462_AddNumberInStockToMovie.cs" />
+    <Compile Include="Migrations\201608220349462_AddNumberInStockToMovie.Designer.cs">
+      <DependentUpon>201608220349462_AddNumberInStockToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608220421566_AddConstrainsToNameInGenre.cs" />
+    <Compile Include="Migrations\201608220421566_AddConstrainsToNameInGenre.Designer.cs">
+      <DependentUpon>201608220421566_AddConstrainsToNameInGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -327,6 +376,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608210105143_AddAnotationsToCustomerName.resx">
       <DependentUpon>201608210105143_AddAnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220135034_AddNameToMembershipType.resx">
+      <DependentUpon>201608220135034_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220136299_PopulateNamesToMembershipType.resx">
+      <DependentUpon>201608220136299_PopulateNamesToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220207282_AddBirthdateToCustomer.resx">
+      <DependentUpon>201608220207282_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220210347_ModifyBirthdateInCustomerAndMakeItNullable.resx">
+      <DependentUpon>201608220210347_ModifyBirthdateInCustomerAndMakeItNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220225510_DeleteBirthdateFromCustomer.resx">
+      <DependentUpon>201608220225510_DeleteBirthdateFromCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220227019_AddBirthdateToCustomer2.resx">
+      <DependentUpon>201608220227019_AddBirthdateToCustomer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220321247_CreateGenreTableAndAddItToMovie.resx">
+      <DependentUpon>201608220321247_CreateGenreTableAndAddItToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220322175_PopulateGenresTable.resx">
+      <DependentUpon>201608220322175_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220346593_AddReleaseDateToMovie.resx">
+      <DependentUpon>201608220346593_AddReleaseDateToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220348168_AddDateAddedToMovie.resx">
+      <DependentUpon>201608220348168_AddDateAddedToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220349462_AddNumberInStockToMovie.resx">
+      <DependentUpon>201608220349462_AddNumberInStockToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608220421566_AddConstrainsToNameInGenre.resx">
+      <DependentUpon>201608220421566_AddConstrainsToNameInGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
