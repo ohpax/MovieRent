@@ -1,13 +1,16 @@
 ﻿@model System.Collections.Generic.List<Vidly.Models.Movie>
 
 <h2>Movies</h2>
+<p>
+ @Html.ActionLink("New Movie", "New", "Movies", new { @class = "btn btn-primary" })
+</p>
+
 @if (Model == null || Model.Count == 0)
-{<text>We don't have any movie yet.</text>
+{
+    <text>We don't have any movie yet.</text>
 }
 else
 {
-
-
     <table class="table  table-bordered">
         <thead>
             <tr>
@@ -20,7 +23,7 @@ else
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(movie.Name, "Details", new {id = movie.Id})
+                        @Html.ActionLink(movie.Name, "Edit", new {id = movie.Id})
 
                     </td>
                     <th>@movie.Genre.Name</th>
