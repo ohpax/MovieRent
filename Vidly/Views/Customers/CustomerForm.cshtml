@@ -9,7 +9,7 @@
 @using (Html.BeginForm("Save", "Customers"))
 {
     @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true,"Please fix the following errors.")
+    @Html.ValidationSummary(false,"Please fix the following errors.")
 
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.Name)

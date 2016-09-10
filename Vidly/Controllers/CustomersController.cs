@@ -23,13 +23,15 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
+        [Authorize(Roles = RolesName.CanManageMovies)]
         public ActionResult New()
         {
             var membershipType = _context.MembershipTypes.ToList();
 
             var viewModel = new CustomerFormViewModel()
             {
-                MembershipTypes = membershipType
+                MembershipTypes = membershipType,
+                Customer = new Customer()
             };
 
             return View("CustomerForm",viewModel);
@@ -39,9 +41,11 @@ namespace Vidly.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Customer Page";
-            var customers = _context.Customers.Include( c => c.MembershipType).ToList();
+            //var customers = _context.Customers.Include( c => c.MembershipType).ToList();
+            if(User.IsInRole(RolesName.CanManageMovies))
+                return View("List");
 
-            return View(customers);
+            return View("ReadOnlyList");
         }
 
         public ActionResult Details(int id)
