@@ -12,6 +12,7 @@ namespace Vidly.Models
     {
         [Required]
         [StringLength(255)]
+        [Display(Name = "Driving License")]
         public string DrivingLicense { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
