@@ -114,8 +114,7 @@
 
                 //--- Form Submit -----
 
-                var validator = $("#newRental")
-                    .validate({
+                var validator = $("#newRental").validate({
                         submitHandler: function () {
                             // e.preventDefault();
                             $.ajax({
@@ -125,7 +124,6 @@
                             })
                                 .done(function () {
                                     toastr.success("Rentals successfully recorded.");
-
                                     $("#customers").typeahead("val", "");
                                     $("#movie").typeahead("val", "");
                                     $("#movies").empty();
