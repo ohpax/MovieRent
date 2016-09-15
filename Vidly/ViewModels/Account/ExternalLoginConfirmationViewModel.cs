@@ -11,5 +11,9 @@ namespace Vidly.ViewModels.Account
         [Required]
         [Display(Name = "Diving License")]
         public string DrivingLicense { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
     }
 }
